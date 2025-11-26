@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probador Virtual Siman</title>
+    <link rel="stylesheet" href="css/siman.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-section">
+            <img src="img/logo_siman.png" alt="Logo S Siman" class="logo-img">
+            <div class="logo-text">
+                <h1>Probador virtual</h1>
+                <p>Crea tu look perfecto</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-action red"><i class="icon-upload"></i> Subir Foto</button>
+            <button class="btn btn-action white"><i class="icon-camera"></i> Tiempo Real</button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="gender-selector">
+            <button class="btn gender-btn">Mujer</button>
+            <button class="btn gender-btn active">Unisex</button>
+            <button class="btn gender-btn">Hombre</button>
+        </div>
+
+        <div class="three-column-layout">
+            
+            <aside class="sidebar selected-items">
+                <h2>Prendas Seleccionadas</h2>
+                <div class="item-slots">
+                    <div class="slot">Superior</div>
+                    <div class="slot">Inferior</div>
+                    <div class="slot">Calzado</div>
+                    <div class="slot">Accesorio</div>
+                </div>
+                <p class="selector-text">Selecciona prendas del catálogo</p>
+            </aside>
+
+            <section class="avatar-section">
+                <div class="avatar-card">
+                    <h3>Tu Avatar</h3>
+                    <span class="tag">Modo Foto</span>
+                    <div class="avatar-display">
+                        <div class="avatar-placeholder"></div> 
+                    </div>
+                    <p class="preview-text">Vista previa</p>
+                </div>
+
+                <div class="bottom-actions">
+                    <button class="btn btn-primary"><i class="icon-save"></i> Guardar Look</button>
+                    <button class="btn btn-secondary"><i class="icon-share"></i> Compartir</button>
+                    <button class="btn btn-secondary"><i class="icon-capture"></i> Captura</button>
+                    <button class="btn btn-secondary"><i class="icon-reset"></i> Reiniciar</button>
+                </div>
+            </section>
+
+            <section class="catalog-section">
+                <h2>Explora el catálogo</h2>
+                <div class="catalog-tabs">
+                    <button class="btn tab active">Superior</button>
+                    <button class="btn tab">Inferior</button>
+                    <button class="btn tab">Calzado</button>
+                    <button class="btn tab">Accesorios</button>
+                </div>
+
+                <div class="product-gallery">
+                    <!-- Los productos se cargarán dinámicamente con JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="js/siman.js"></script>
+</body>
+</html>
